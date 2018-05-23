@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Yesodot Chat</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="chatstyle.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="clientlogic.js"></script> 
+  </head>
+  <body>
+
+    <div id="list"  onmouseover="showv(true)" onmouseout="showv(false)">
+      <center><p id="who">Hello </p></center>
+      <center><p id="online">Online: 100</p></center>
+      <p id="users">user1,user2,user3</p>
+      <p id="v">
+        Made by Grisha.<br>
+        Very early alpha.
+      </p>
+    </div>
+
+    <ul id="messages"></ul>
+    <div id="form" onmouseover="showbutton(true)" onmouseout="showbutton(false)">
+      <div id="inputstuff">
+        <input type="text" id="field" placeholder="Type a message..." onkeypress="enterpress(event)"/>
+        <input type="button" id="send" value="send" onclick="submitMessage()"/>
+      </div>
+    </div>
+    <div id="logdiv">
+        <input type="button" id="log" value="Submit Logs" onclick="submitLog()"/>
+    </div>
+    <div id="logoutdiv">
+        <input type="button" id="logout" value="Log out" onclick="logout()"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "logs":
+    [
+        {
+        "id": "0",
+        "time": "somewhen",
+        "log": "DEV: this is init message",
+        "type": "test"
+        }
+    ]
+}

@@ -1,0 +1,233 @@
+.login-page
+{
+    opacity: 1;
+    position: absolute;
+    background-image: url("images/loginbg.jpg");
+    width: 100%;
+    height: 100%;
+    background-color: rgb(180, 206, 180);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+#register-form
+{
+   /*  visibility: hidden; */
+    position: absolute;
+    width: 50%;
+    height: 53%;
+    min-height: 480px;
+    background-color: rgba(224, 224, 228,0.6);
+    margin-left: 25%;
+    margin-top: 10%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    z-index: 5;
+}
+/* .login-page:focus
+{
+    opacity: 1;
+} */
+
+#userreg
+{
+    visibility: hidden;
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 25%;
+    height: 8%;
+    transition-duration: 0.2s;
+}
+
+#passreg
+{
+    visibility: hidden;
+    margin-left: 25%;
+    margin-top: 3%;
+    width: 25%;
+    height: 8%;
+    transition-duration: 0.2s;
+}
+#form
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    min-height: 480px;
+    background-color: rgba(224, 224, 228,0.6);
+    margin-left: 25%;
+    margin-top: 10%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    z-index: 10;
+    transition-duration: 2s;
+}
+
+/* .login-form
+{
+    white-space: normal;
+    display: block;
+    margin-left: 25%;
+    padding: 15% 0 0 0;
+} */
+
+#user
+{
+    
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 25%;
+    height: 8%;
+    transition-duration: 0.2s;
+}
+
+#user:focus, #pass:focus,#user2:focus,#userreg:focus,#passreg:focus {
+    background-color: rgb(209, 173, 166);
+  /*  border: 3px solid #555; */
+}
+
+#user:hover, #pass:hover,#user2:hover, #userreg:hover,#passreg:hover
+{
+    width: 50%;
+}
+
+#pass
+{
+    margin-left: 25%;
+    margin-top: 3%;
+    width: 25%;
+    height: 8%;
+    transition-duration: 0.2s;
+}
+
+#send
+{
+    visibility: visible;
+    margin-top: 3%;
+    width: 15%;
+    margin-left: 25%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(180, 206, 180);
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#send:hover 
+{
+    width: 30%;
+    margin-left: 25%;
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+#err
+{
+    margin-top: 2%;
+    margin-left: 37%;
+    width: 50%;
+    height: 5%;
+    color: red;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+#accmsg
+{
+    visibility: hidden;
+    margin-top: 5%;
+    margin-left: 28%;
+    width: 50%;
+    height: 5%;
+    color: red;
+    font-weight: bold;
+}
+
+
+#message
+{
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 50%;
+    height: 5%;
+}
+
+
+
+#user2
+{
+    margin-left: 25%;
+    width: 25%;
+    height: 8%;
+    transition-duration: 0.2s;
+}
+#send2
+{
+    margin-top: 3%;
+    width: 15%;
+    margin-left: 25%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(180, 206, 180);
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#send2:hover 
+{
+    width: 30%;
+    margin-left: 25%;
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+#sendreg
+{
+    visibility: hidden;
+    margin-top: 3%;
+    width: 25%;
+    margin-left: 25%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(180, 206, 180);
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#sendreg:hover 
+{
+    width: 30%;
+    margin-left: 25%;
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+#reg
+{
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: #008CBA;
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#reg:hover 
+{
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}

@@ -1,0 +1,9 @@
+{
+   "mongoip": "mongodb://admin:admin@ds119028.mlab.com:19028/halva",
+   "port" : 3200,
+   "nametag" : "[halva]",
+   "logspass": "88",
+   "apipass": "waw",
+   "hashlvl": 10,
+   "chathistory": 10
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="stylesheet" type="text/css" href="loginstyle.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Yesodot Chat</title>
+</head>
+<body>
+    <div class="login-page">
+        <div id="form">
+           <!--  <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form> -->
+            
+            <!-- <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/> -->
+            <input type="text" id="user" placeholder="username.."/>
+            <input type="password" id="pass" placeholder="password.."/>
+            <br>
+            <input type="button" id="send" value="Login" onclick="submitLogin()"/>
+            <!-- <button>login</button> -->
+            <p id="err">-error msg here-</p>
+            <p id="message">Don't have account?</p>
+            <input type="text" id="user2" placeholder="pick a name.."/>
+            <br>
+            <input type="button" id="send2" value="Join" onclick="submitHobo()"/> 
+        </div>
+        <div id="register-form">
+            <input type="text" id="userreg" placeholder="username.."/>
+            <input type="password" id="passreg" placeholder="password.."/>
+            <br>
+            <input type="button" id="sendreg" value="Make account" onclick="submitReg()"/>
+            <p id="accmsg">Join now</p>
+        </div>
+        <input type="button" id="reg" value="Create account" onclick="showacc()"/>
+    </div>
+</body>
+<script type="text/javascript" src="loginlogic.js"></script> 
+</html>

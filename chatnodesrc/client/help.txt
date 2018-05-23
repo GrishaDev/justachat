@@ -1,0 +1,11 @@
+
+          /                           =  chat
+          /users                      =  output all users from mongodb
+          /logs                       =  output all chat logs from mongodb
+          /apihelp                    =  no need to explain
+          /login/:name/:pass          = login
+          /register/:name/:pass       = register
+          /edit/:id/:name/:pass/:type = edit user with :id with values
+          /adduser/:name:/:pass/:type = add user
+          /removeuser/:id             = remove user with id
+
