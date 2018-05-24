@@ -1,0 +1,109 @@
+<!-- <div class="container theme-showcase" role="main"> -->
+  <div class="jumbotron">
+    <div class="container">
+      <form (ngSubmit)="accSubmit(f)" #f="ngForm">
+        <div class="row text-center">
+          <div class="col-xs-8 col-xs-offset-2 form-group">
+            <label for="name">Username</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              name="name"
+              ngModel
+              required
+              login
+              #name="ngModel"
+              (input)="inputChanged($event)"
+            >
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-8 col-xs-offset-2 form-group">
+              <label for="pass">Password</label>
+              <input
+                type="password"
+                id="pass"
+                class="form-control"
+                name="pass"
+                ngModel
+                required
+                password
+                #pass="ngModel"
+                (input)="inputChanged($event)"
+              >
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-8 col-xs-offset-2 form-group">
+            <button
+            class="formbtn"
+            type="submit"
+            [disabled]="!f.valid">Login</button>
+          </div>
+        </div>
+        </form>
+        <hr>
+        <form (ngSubmit)="quickSubmit(f2)" #f2="ngForm">
+        <div class="row text-center">
+          <div class="col-xs-8 col-xs-offset-2 form-group">
+            <label for="namequick">name</label>
+            <input
+              type="text"
+              id="namequick"
+              class="form-control"
+              name="namequick"
+              ngModel
+              namequick
+              required
+              #namequick="ngModel"
+              (input)="inputChanged($event)"
+            >
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-8 col-xs-offset-2 form-group">
+            <button
+            class="formbtn"
+            type="submit"
+            [disabled]="!f2.valid">Quick enter</button>
+          </div>
+        </div>
+        </form>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 ">
+            <span class="help-block" *ngIf="(!name.valid && name.touched)">
+              <p class="text-danger">Input username.</p>
+            </span>
+          </div>
+          <div class="col-xs-14 col-xs-offset-2 form-group" *ngIf="wrong">
+            <span class="help-block">
+              <p class="text-danger">{{ autherror }}</p>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 ">
+            <span class="help-block" *ngIf="!pass.valid && pass.touched">
+              <p class="text-danger">Input password.</p>
+            </span> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 ">
+            <span class="help-block" *ngIf="(!namequick.valid && namequick.touched)">
+              <p class="text-danger">Input name.</p>
+            </span>
+          </div> 
+        </div>
+    </div>
+  </div>
+ <!--  <p class="text-danger">
+    user = {{ username }}
+  </p>
+  <p class="text-danger">
+    password = {{ userpass }}
+  </p> -->
+  
+    
+    

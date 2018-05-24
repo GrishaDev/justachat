@@ -1,0 +1,247 @@
+#liaddshapes::-webkit-scrollbar {
+    width: 0 !important;
+}
+#main 
+{
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    height: 95%;
+    width: 95%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(224, 224, 228,0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.botpanel
+{
+    overflow:auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    /* background-color: red; */
+    min-height: 50px;
+}
+
+#content
+{
+    overflow:auto;
+    width: 100%;
+    height: 93%;
+    /* background-color: green; */
+}
+
+.rightpanel
+{
+    text-align: center;
+    overflow:auto;
+    overflow-y: hidden;
+    left: 85%;
+    bottom:80%;
+    position:fixed;
+    width: 15%;
+    height: 20%;
+    background-color: rgb(130, 150, 175);
+    opacity: 0.7;
+    border-style: groove;
+    border-width: 2px;
+    transition-duration: 0.4s;
+}
+
+.rightpanel:hover
+{
+    height: 50%;
+    bottom: 50%;
+}
+
+.who
+{
+    white-space: nowrap;
+    display: inline;
+    overflow: hidden;
+}
+.room
+{
+    margin: 10px;
+    font-weight: bold;
+}
+.online 
+{
+    text-decoration: underline;
+}
+.users
+{
+    width:100%;
+    word-wrap: break-word;
+}
+
+.v
+{
+  position: absolute;
+  visibility: hidden;
+  text-decoration-style: solid;
+  opacity: 1;
+  /* margin-top: 200%; */
+  bottom: 0;
+}
+
+.input
+{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    height: 90%;
+    width: 40%;
+    z-index: 3;
+}
+
+.field
+{
+    left: 0;
+    bottom: 0;
+    height: 80%;
+    width: 50%;
+    transition-duration: 0.4s;
+}
+
+.field:focus {
+    /* background-color: rgb(209, 173, 166); */
+    width: 100%;
+}
+
+.field:hover
+{
+    width: 100%;
+}
+
+.logdiv
+{
+    position: fixed;
+    display:block;
+    right: 30%;
+    bottom: 0;
+    z-index: 4;
+    text-align: right;
+}
+
+.imglog
+{
+    height: 50%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.imglog:hover
+{
+    /* background-color: rgb(219, 73, 28); */
+    filter: brightness(1.5)
+}
+.log
+{
+    position: fixed;
+    width: 10%;
+    height: 5%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: #008CBA;
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.log:hover {
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+.logoutdiv
+{
+    position: fixed;
+    display:block;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    text-align: right;
+}
+
+.logout
+{
+    width: 100%;
+    height: 5%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: #008CBA;
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+.imglogout
+{
+    height: 20%;
+    width: 20%;
+    z-index: 5;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.imglogout:hover
+{
+    /* background-color: rgb(219, 73, 28); */
+    filter: brightness(1.5)
+}
+
+
+#messages 
+{ 
+    list-style-type: none;
+    padding: 0;
+    font-size: 25px;
+    transition-duration: 1s;
+}
+#messages li 
+{ 
+    display:block;
+    overflow:visible;
+    overflow-wrap: break-word;
+    height: 0;
+    margin: 0;
+    padding: 0px 10px;
+    padding-bottom: 40px;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+#messages li.hide
+{
+    opacity: 0;
+    height: 2em;
+    margin: 2px 0;
+    /* transition: all 0.3s ease-out; */
+}
+
+#messages li.show 
+{
+    opacity: 1;
+    height: 2em;
+    margin: 2px 0;
+}
+
+#messages li:nth-child(odd) 
+{ 
+    background: rgba(209, 209, 238, 0.6); 
+    /* 238 */
+}

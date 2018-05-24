@@ -1,0 +1,5 @@
+<app-box *ngIf="!login"></app-box>
+<app-signup *ngIf="login"></app-signup>
+    <button
+    class="switch"
+    (click) = "onSwitch()">{{ buttontxt }}</button>

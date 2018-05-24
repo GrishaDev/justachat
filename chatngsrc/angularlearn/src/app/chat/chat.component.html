@@ -1,0 +1,48 @@
+<div id="main">
+  <div class="rightpanel" (mouseenter)="hover(true)" (mouseleave)="hover(false)">
+    <p class="room">Room {{ roomnum }}</p>
+    <hr>
+    <div class="who"> 
+      Hello <p class="who" [style.color]="yourcolor">{{ user }} </p>
+    </div>
+    <p class="online">Online: {{ online }}</p>
+    <p class="users">{{ users }}</p>
+    <p class="v" 
+    [style.visibility]="showv ? 'visible' : 'hidden'">
+      Made by Grisha
+      Alpha version.
+    </p>
+  </div>
+  <div class="botpanel">
+    <div class="input">
+        <input type="text" class="field"
+        placeholder="Type..."
+        id="txtfield"
+        autofocus
+        (keydown)="onInput($event)"
+        maxlength="80" >
+    </div>
+    <div class="logdiv">
+        <img src="../../assets/wood.png" alt="log" class="imglog"
+                  (click)="submitLog()">
+    </div>
+    <div class="logoutdiv">
+        <!-- <button
+        class="logout"
+        (click) = "logout()">Log out</button> -->
+        <img src="../../assets/logout2.png" alt="logout" class="imglogout"
+                    (click)="logout()">
+
+    </div>
+  </div>
+  <div id="content">
+    <ul id="messages">
+      <li *ngFor="let msg of msgs; let a = index let last=last"
+      [class.show]="last">
+      <b [style.color]="color">{{ usermsg[a] }} </b>{{ msgs[a] }}</li>
+    </ul>
+    <!-- <ul id="messages"></ul> -->
+  </div>
+</div>
+
+<!-- <b style="color:red">Tester: </b> -->

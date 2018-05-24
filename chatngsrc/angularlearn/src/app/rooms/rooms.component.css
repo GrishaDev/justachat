@@ -1,0 +1,175 @@
+.jumbotron 
+{
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    height: 90%;
+    min-height: 350px;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(224, 224, 228,0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    transition-duration: 1s;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color:rgba(163, 158, 130, 0.267);
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card::after {
+    
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    border-style: solid;
+    border-width: 2px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover
+{
+    transform: scale(1.1,1.1);
+}
+
+.card:hover::after{
+    opacity: 1;
+}
+
+
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.title
+{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status
+{
+    font-size: 15px;
+}
+
+.topline
+{
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    width:100%;
+    height: 5%;
+    min-height: 40px;
+    background-color: rgba(131, 131, 131, 0.6);
+}
+.hellotxt
+{
+    text-decoration-style: solid;
+}
+.logoutdiv
+{
+    position: fixed;
+    display:block;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    text-align: right;
+}
+
+.logout
+{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 10%;
+    height: 5%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: #008CBA;
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.logout:hover {
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+.imglogout
+{
+    height: 20%;
+    width: 20%;
+    z-index: 5;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.imglogout:hover
+{
+    /* background-color: rgb(219, 73, 28); */
+    filter: brightness(1.5)
+}
+
+.addroom2
+{
+    overflow:auto;
+    position: fixed;
+    bottom: 50px;
+    left: 70px;
+    transition-duration: 0.3s;
+}
+.addroom2:hover
+{
+    overflow:auto;
+    position: fixed;
+    bottom: 40px;
+}
+.addroom
+{
+    overflow:auto;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 6%;
+    height: 6%;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: #008CBA;
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.addroom:hover:enabled {
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}
+
+.addroom[disabled]
+{
+  background-color:rgb(10, 80, 104);
+  cursor: not-allowed
+}
+
+.del 
+{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: -15%;
+    top: 0px;
+}

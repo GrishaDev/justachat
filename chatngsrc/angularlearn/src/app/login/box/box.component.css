@@ -1,0 +1,46 @@
+/* .container {
+    position: relative;
+    height: 50%;
+    border: 1px solid;
+  } */
+  
+  .jumbotron {
+    position: absolute;
+    top: 40%;
+    left:50%;
+    height: 40%;
+    min-height: 350px;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(224, 224, 228,0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+input.ng-invalid.ng-touched
+{
+    border: 1px solid red;
+}
+
+.formbtn
+{
+    font-size: 17px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(7, 123, 161);
+    border: 2px solid rgb(100, 104, 103);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.formbtn[disabled]
+{
+  background-color:rgb(10, 80, 104);
+  cursor: not-allowed
+}
+
+.formbtn:hover:enabled
+{
+    padding: 5px 50px 5px 50px;
+    background-color: rgb(219, 73, 28);
+    color: rgb(3, 2, 2);
+}

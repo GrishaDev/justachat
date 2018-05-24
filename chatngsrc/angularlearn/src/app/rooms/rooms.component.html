@@ -1,0 +1,81 @@
+<!-- <div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 form-group">
+        <p>hello??</p>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 form-group">
+        <p>hello??23</p>
+        <button class="btn btn-primary" >hey</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container theme-showcase" role="main"> -->
+  <div class="jumbotron" [style.opacity]="opacity">
+    <div class="topline">
+      <p class="hellotxt"> Hello {{user}}, you are {{type}}. {{info}}</p>
+    </div>
+    <div class="container">
+      <!-- <form (ngSubmit)="regSubmit(f)" #f="ngForm"> -->
+        <div class="row">
+          <div class="col-sm-3" *ngFor="let room of rooms; let a = index">
+                  <div class="card">
+                    <img src="../../assets/room.jpg" alt="Avatar" style="width:100%"
+                    (click)="roomClick(a)">
+                    <img src="../../assets/del.png" class="del" (click)="deleteClick(a)"
+                    [style.visibility]="auth ? 'visible' : 'hidden'">
+                    <div class="container">
+                      <p class="title"> {{ titles[a] }}<p>
+                      <p class="status">Online: {{ room }}</p> 
+                    </div>
+                  </div>
+          </div>
+        </div>
+      <!-- </form> -->
+    </div>
+      <!-- <div class="addroom" (click) = "addroom()">
+      <! <img src="../../assets/add.png" style="height:100%; width:100%"> -->
+      <!-- Add
+      </div> --> 
+      <div class="logoutdiv">
+          <!-- <button
+            class="logout"
+            (click) = "logout()">Logout</button> -->
+            <img src="../../assets/logout2.png" alt="logout" class="imglogout"
+                    (click)="logout()">
+        </div>
+  </div>
+  <img src="../../assets/add2.png"
+      class="addroom2"
+      (click) = "addroom()"
+      [style.visibility]="auth ? 'visible' : 'hidden'">
+  
+
+  <!-- <div class="container-fluid">
+    <h1>Hello World!</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+  
+  </div> -->
+  <!-- <p class="text-danger">
+    user = {{ username }}
+  </p>
+  <p class="text-danger">
+    password = {{ userpass }}
+  </p> -->
+  
+    
+    
+<!-- <div class="col" *ngFor="let i of rooms">
+    <div class="card">
+      <img src="../../assets/room.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <p class="title">Room {{ i }}<p>
+        <p class="status">Online: {{ rooms[i] }}</p> 
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <p>hello?</p> -->

@@ -1,0 +1,20 @@
+<h1 style="text-align:center" [ngStyle]="{color: getColor()}"
+[ngClass]="{online: showtxt}">
+    {{ title }}
+</h1>
+
+
+<button class="btn btn-primary" [disabled]="disabled" (click)="onTestButtonClick()">
+super test
+</button>
+<br>
+<input type="text" class="form-control" (input)="onInput($event)">
+<input type="text" class="form-control" [(ngModel)]="randomtxt">
+<p *ngIf="showtxt; else notxt"> {{ randomtxt }} </p>
+
+<ng-template #notxt>
+    <p>Input something..</p>
+</ng-template>
+
+<!-- <app-thing [vur]="title"></app-thing> -->
+<app-thing *ngFor="let thing of things; index as i" [vur]="things[i]"></app-thing>
